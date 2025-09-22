@@ -642,22 +642,24 @@ const selectPositions = document.querySelector(".select_positions");
 function createOptions(
   selectElement,
   dataSource,
-  mapFunction = (item) => item
+  mapFunction = (item) => item,
+  options = { sort: false, reverse: false }
 ) {
-  dataSource
+  Object.keys(dataSource)
     .map(mapFunction)
-    .sort()
-    .reverse()
+    .sort((a, b) => (options.sort ? a.localeCompare(b) : 0))
+    .reverse(options.reverse)
     .forEach((item) => {
       const option = document.createElement("option");
       option.value = option.textContent = item;
-      selectElement.add(option, selectElement.firstElementChild);
+      selectElement.insertBefore(option, selectElement.firstElementChild);
     });
 } // Добавление селектов позиций в HTML
-createOptions(selectTeams, Object.keys(clubAbbreviations), (team) =>
-  team.split(" ").pop()
-);
-createOptions(selectPositions, Object.keys(players));
+createOptions(selectTeams, clubAbbreviations, (team) => team.split(" ").pop(), {
+  sort: true,
+  reverse: true,
+});
+createOptions(selectPositions, players);
 
 const secondLine = document.querySelector(".second_line");
 const tableHeaderTemplate = document.querySelector("#table_header").content;
