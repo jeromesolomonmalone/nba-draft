@@ -1,1 +1,1 @@
-# nba-draft
+https://jeromesolomonmalone.github.io/nba-draft/

@@ -58,7 +58,7 @@ body {
   margin: 0 auto;
   padding: 16px var(--main-padding) 32px;
   color: var(--main-color);
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue";
   background-color: var(--main-background);
   max-inline-size: 1440px;
 }
@@ -139,6 +139,7 @@ body {
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 5px 12px;
+  font-weight: 500;
 }
 
 .select {
@@ -147,6 +148,7 @@ body {
   left: 0;
   opacity: 0;
   font-family: inherit;
+  font-weight: inherit;
   font-size: inherit;
   cursor: pointer;
   inline-size: 100%;
@@ -167,6 +169,7 @@ body {
 }
 
 thead tr {
+  font-weight: 500;
   background-color: var(--input-background);
 }
 
@@ -281,6 +284,10 @@ thead th {
   block-size: 100%;
 }
 
+.player_head_right {
+  font-weight: 500;
+}
+
 .player_head_down {
   color: var(--subtext);
   font-size: 12px;
@@ -298,6 +305,7 @@ thead th {
   justify-content: end;
   align-items: center;
   padding-inline-end: 36px;
+  font-weight: 500;
   font-size: 10px;
   line-height: 12px;
   background-color: var(--input-background);
@@ -389,7 +397,6 @@ footer {
   }
 
   .title {
-    font-weight: 600;
     font-size: 22px;
     line-height: 26px;
   }
