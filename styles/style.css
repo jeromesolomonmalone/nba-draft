@@ -142,6 +142,11 @@ body {
   font-weight: 500;
 }
 
+.filter_title {
+  align-self: end;
+  line-height: 1.16;
+}
+
 .select {
   position: absolute;
   top: 0;
