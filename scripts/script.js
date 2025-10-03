@@ -1506,13 +1506,14 @@ const clubAbbreviations = {
   "Atlanta Hawks": "ATL",
   "Boston Celtics": "BOS",
   "Chicago Bulls": "CHI",
+  "Cleveland Cavaliers": "CLE",
   "Dallas Mavericks": "DAL",
   "Denver Nuggets": "DEN",
   "Detroit Pistons": "DET",
   "Golden State Warriors": "GSW",
   "Houston Rockets": "HOU",
   "Indiana Pacers": "IND",
-  "LA Clippers": "LAC",
+  "Los Angeles Clippers": "LAC",
   "Miami Heat": "MIA",
   "Milwaukee Bucks": "MIL",
   "Minnesota Timberwolves": "MIN",
@@ -1522,7 +1523,7 @@ const clubAbbreviations = {
   "Orlando Magic": "ORL",
   "Portland Trail Blazers": "POR",
   "San Antonio Spurs": "SAS",
-  "Toronto Raptors": "TOR",
+  "Washington Wizards": "WAS",
 }; // Аббревиатуры клубов
 const positions = ["PG", "SG", "G", "SF", "PF", "F", "C"]; // Позиции
 
